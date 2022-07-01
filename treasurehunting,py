@@ -1,0 +1,27 @@
+print("welcome to treasure island")
+
+option1 = input('You are in middle of jungle. you have two road, type "left" or "right"\n').lower()
+if option1 =="left":
+    choice2 = input("you come in front of three doors, choose either 1st, 2nd or 3rd.\n").lower()
+    if choice2 == "1st":
+        print("You came in tiger room. Game Over.")
+    elif choice2 == "2nd":
+        print("you drop in lava. Game Over.")
+    elif choice2 == "3rd":
+        choice3 = input('You found statue of fox, you see glob in his both hands, choose "left" or "right" hand.\n').lower()
+        if choice3 == "left":
+            print("You found a treasure.You Won.")
+        elif choice3 == "right":
+            print("By choosing this glob, whole temple fall down, you die. Game Over")
+        else:
+            print("you type wrong choice. Game Over")
+    else:
+        print("you choose door is not exist. Game Over.")
+elif option1 == "right":
+    print("you drop in lake of aligator, you die. Game Over")
+else:
+    print("Your choice is not walid. Game Over")
+    
+    
+
+
